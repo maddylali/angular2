@@ -6,7 +6,6 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database-deprecated';
 
 import { AppComponent } from './app.component';
-import { SharedService } from './shared/shared';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,7 @@ import { SharedService } from './shared/shared';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule
   ],
-  providers: [SharedService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
