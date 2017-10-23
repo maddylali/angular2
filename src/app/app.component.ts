@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
-import { AngularFireDatabase } from 'angularfire2/database-deprecated';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +6,7 @@ import { AngularFireDatabase } from 'angularfire2/database-deprecated';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  course: String;
+  course: string;
   constructor() {
   }
   ngOnInit() {
