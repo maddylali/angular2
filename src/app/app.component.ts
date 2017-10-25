@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   constructor() {
   }
   ngOnInit() {
-    this.course = 'Angular2.0';
+    this.course = 'Angular4.0';
   }
 
 
