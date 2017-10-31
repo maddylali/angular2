@@ -1,3 +1,32 @@
-<p>{{student.name}}</p>
+<!-- <p>{{student.name}}</p>
 <p>{{student.email}}</p>
-<button class="btn btn-primary btn-sm" (click)="sendData()">Click</button>
+<button class="btn btn-primary btn-sm" (click)="sendData()">Click</button> -->
+
+<!-- <p [hidden]="!showName">{{studentName}}</p>
+{{showName}}
+
+<h2 [innerHtml]="studentName" *ngIf="showName"></h2>
+
+<button (click)="changeState()">click Me!</button> -->
+
+<!-- <p *ngFor="let student of students">{{student}}</p> -->
+
+<!-- <p>Amount: {{amount | currency:'USD':true:'2.2-2'}}</p>
+<p>Amount: {{amount2 | currency:'USD':true:'2.2-2'}}</p>
+
+<p>Date: {{date | date:'H:mm:ss'}}</p> -->
+
+<input type="text" [(ngModel)]="filterText">
+{{filterText}}
+<ul>
+    <li *ngFor="let student of studentsArr | filterList: filterText">
+        {{student.id}} . {{student.name | uppercase}}
+        <ul>
+            <li *ngFor="let friend of student.friends">
+                {{friend}}
+            </li>
+        </ul>
+    </li>
+</ul>
+
+filtering text: {{filterText}}
